@@ -1,0 +1,253 @@
+@import url(fonts.css);
+@import url(layout.css);
+@import url(styles.css);
+@import url(responsive.css);
+
+body.black {
+    background-color: black;
+}
+
+.page-header-title {
+    text-align: center;
+}
+
+.page-header-title .location {
+    font-size: 18px;
+}
+
+.page-header-title .selection {
+    font-size: 25px;
+}
+
+.badge-label-container {
+    
+    position: relative;
+}
+
+
+.badge-label {
+    position: absolute;
+    left: -10px;
+    bottom: 30px;
+    background-color: #fffffff2;
+    padding: 0 30px;
+    /* border-bottom-left-radius: 3px; */
+    /* border-bottom-right-radius: 3px; */
+    /* border-top-right-radius: 3px; */
+    border: 1px solid #d6d6d6;
+    
+}
+
+.badge-label::before {
+    content: '';
+    width: 0;
+    height: 0;
+    left: -1px;
+    position: absolute;
+    top: -11px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #a9a9a9;
+    border-left: 10px solid transparent;
+}
+
+
+
+
+/* SELECTIE */
+
+.category {
+    margin: 30px 0 10px 0;
+    padding: 0 8px;
+    display: inline-block;
+    background-color: #eaebe3;
+    border-radius: 3px;
+    font-size: 25px;
+}
+
+
+.program-event {
+}
+
+.program-event .header {
+    font-weight: bold;
+}
+
+.program-event .header > span {
+    display: block;
+}
+
+.program-event .header > span.header-location {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+    margin-top: 30px;
+}
+
+.list > span {
+    display: block;
+}
+
+.category-image {
+    width: 100%;
+}
+
+.movie {
+    
+}
+
+.item.title{
+    font-weight: 600;
+}
+
+.bar::after{
+    content: '';
+    display: inline-block;
+    background-color: #a1a1a1;
+    width: 1px;
+    height: 10px;
+    margin: 0 20px 0 20px;
+}
+
+.debut {
+    background-color: #e5efe4;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.movie-image {
+    -webkit-box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.44); 
+    box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.44);
+    margin: 20px 0;
+}
+
+
+.preselectie-footer-info {
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+
+
+.description-panel {
+    display: none;
+    border-left: 1px solid rgb(214, 214, 214);
+    padding: 0 20px;
+}
+
+.description-panel-visible{
+    /* border-left: 1px solid rgb(214, 214, 214); */
+    /* padding: 0 20px; */
+}
+
+.description-panel img {
+    width: 150px;
+    float: left; 
+    margin-right: 20px;
+}
+
+.description-panel-visible img {
+    width: 200px;
+    float: left; 
+    margin-right: 20px;
+}
+
+.read-more {
+    cursor: pointer;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.read-more::after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    background-image: url("/src/img/arrow.png");
+    background-size: 12px 12px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+a.cumpara,
+span.cumpara {
+    font-weight: normal;
+    color: #444;
+}
+
+.links-style,
+a.cumpara-abonament,
+span.cumpara-abonament {
+    font-weight: normal;
+    color: #444;
+    padding: 0 8px;
+    display: inline-block;
+    background-color: #eaebe3;
+    border-radius: 3px;
+}
+
+/* PROGRAM — clase recuperate din bundle.js (ediția 16) */
+
+.event-day {
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.event-day .day {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.event-time {
+    font-weight: bold;
+    background-color: #eaebe3;
+}
+
+.header-location {
+    line-height: 1rem;
+    margin-bottom: 1.5px;
+}
+
+.header-location > .header-location-name {
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+}
+
+.header-location > .header-location-details {
+    display: inline-block;
+}
+
+.header-location-name {
+    font-weight: bold;
+}
+
+.header-location-name::before {
+    content: '■';
+    vertical-align: text-bottom;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.parteneri-col {
+    text-align: center;
+}
+
+.super-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* BOOTSTRAP EXTENSION */
+@media (min-width: 768px) {
+    .col-5ths {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}

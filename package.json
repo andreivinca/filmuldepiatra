@@ -1,0 +1,20 @@
+{
+  "name": "filmuldepiatra",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Hibbard",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.5.1",
+    "lightbox2": "^2.11.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.4"
+  }
+}
